@@ -1,7 +1,7 @@
 name: Test workflow
 on: [pull_request, workflow_dispatch]
 jobs:
-  testing:
+  unit-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
