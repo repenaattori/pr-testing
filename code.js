@@ -1,6 +1,8 @@
 
 function info(){
-    console.log('info called');
+    console.log('*********************************');
+    console.log('******** Uusi haara');
+    console.log('*********************************');
     
     return 5;
 }
