@@ -1,0 +1,19 @@
+name: Test workflow
+on: [pull_request, workflow_dispatch]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with: 
+          ref: main
+      - name: Install NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm install
+      - run: npm test
+
+
+      
