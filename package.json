@@ -27,7 +27,7 @@
     "dev": "",
     "test": "vitest --no-watch"
   },
-  "dependencies": {
+  "devDependencies": {
     "vitest": "^3.1.3"
   }
 }
